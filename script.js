@@ -132,7 +132,7 @@ let all_messages = []
 
     //display drafts corresponding to each Id
     for(var i=0;i<Draft_Ids.length;i++){
-        const data = await fetch("https://gmail.googleapis.com/gmail/v1/users/chetanharicharan@gmail.com/drafts/"+Draft_Ids[i]+"?access_token="+token);
+        const data = await fetch("https://gmail.googleapis.com/gmail/v1/users/"+mail+"/drafts/"+Draft_Ids[i]+"?access_token="+token);
     
         const data1 = await data.json();
     
